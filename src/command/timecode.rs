@@ -5,7 +5,7 @@ use byteorder::{ReadBytesExt, WriteBytesExt};
 use crate::{convert::Convertable, Error, Result};
 
 data_structure! {
-    #[derive(Debug)]
+    #[derive(Debug, Clone, Copy)]
     #[doc = "Used to for timecode on the network"]
     pub struct Timecode {
         #[doc = "Determines which version the server has. Will be ARTNET_PROTOCOL_VERSION by default"]
