@@ -1,6 +1,6 @@
 [package]
 name = "artnet_protocol"
-version = "0.4.3"
+version = "0.4.4"
 authors = ["Victor Koenders <victor.koenders@gmail.com>"]
 description = "A 1:1 implementation of the ArtNet protocol"
 license = "MIT"
@@ -11,3 +11,6 @@ edition = "2018"
 [dependencies]
 bitflags = "2.4"
 byteorder = "1.4"
+
+[dev-dependencies]
+socket2 = "0.6"
